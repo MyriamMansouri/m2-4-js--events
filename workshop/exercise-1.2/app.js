@@ -3,17 +3,19 @@
 console.log('exercise 1.2');
 
 // set game duration in seconds and update DOM with the information
-let gameDuration = (Math.floor(Math.random() * 5) + 1);
-let clicksToWin = (Math.floor(Math.random() * 10) + 1);
+let gameDuration = (Math.floor(Math.random() * 7) + 1);
+let clicksToWin = (Math.floor(Math.random() * 20) + 1);
 
 // Select useful elements from the DOM
 const timeSpan = document.querySelector("#time");
+const cupcakeSpan = document.querySelector("#cupcakes");
 const btn = document.querySelector("#reload-btn");
 const result = document.querySelector("#result");
 const resultText = document.querySelector("#result-text");
 const rules = document.querySelector("#rules");
 
 timeSpan.innerText = gameDuration ;
+cupcakeSpan.innerText = clicksToWin ;
 
 // count clicks
 let clickNum = 0;
