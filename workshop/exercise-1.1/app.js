@@ -7,14 +7,13 @@ let isClicked = false;
 
 const handleClick = () => {
     isClicked = true;
-    console.log("clciked")
 };
 
-const clickListener = body.addEventListener("click", handleClick);
+body.addEventListener("click", handleClick);
 
 const endTheGame = () => {
     const alertMessage = isClicked === true ? "You won." : "He won.";
     body.innerHTML = `<p>${alertMessage}</>`;
-    removeEventListener(clickListener);
+    removeEventListener("click", handleClick);
 };
 setTimeout(endTheGame, 1000)
