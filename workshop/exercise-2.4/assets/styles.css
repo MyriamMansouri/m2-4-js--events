@@ -1,0 +1,76 @@
+@import "settings.css";
+
+* {
+    padding:0;
+    margin:0;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='90' height='110' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>👆</text></svg>") 16 0,auto; /*!emojicursor.app*/;
+
+}
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.main {
+    width:100%;
+    height: 100%;
+    position:relative;
+
+}
+.start-screen,
+.game-screen,
+.final-score-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.final-score-screen {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    font-size: 10rem;
+    font-family: 'Titan One', cursive;
+}
+
+.score-item {
+    margin: 20px auto;
+}
+
+.game-screen,
+.final-score-screen {
+    display: none;
+}
+
+.btn {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    border: solid 3px  var(--border-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.btn-game {
+    position:absolute;
+}
+
+.btn:hover {
+    background-color: white;
+    color:var(--main-color);
+}
+
+.is-green, 
+.is-green:hover {
+    background-color : var(--secondary-color); 
+    color : var(--border-color); 
+}

@@ -2,10 +2,28 @@
 <html>
   <head>
     <title>Exercise 2.4</title>
-    <style></style>
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Titan+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="main" id="main"></div>
+    <div class="main" id="main">
+      <div class="start-screen" id="start-screen">
+        <button class="btn" id="start-btn">Start Game</button>
+      </div>
+      <div class="game-screen" id="game-screen">
+        <div id="buttons"></div>
+        <div>
+          <p>
+            <div>Remaining time: <span id="time"></span>s</div>
+            <div>Remaining buttons: <span id="score-number"></span> buttons</div>
+          </p>
+        </div>
+      </div>
+      <div class="final-score-screen" id="final-score-screen">
+        <div class="score-item" id="message"></div>
+        <button class="btn score-item" id="back-btn">Return</button>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
