@@ -15,7 +15,6 @@ const updateTime = () => {
 
 
 const beautifyTime = (time) => {
-    console.log(time.toString().length === 1 ? '0' + time : '' + time)
     return time.toString().length === 1 ? '0' + time : '' + time;
 }
 
