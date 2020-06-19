@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.btn {
+    padding: 20px 30px;
+    background-color: crimson;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    border: solid;
+}
+
+.is-green {
+    background-color : #03fc94; 
+    color : #2c3632; 
+}
+
+.score {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding : 4px;
+    background-color  : black; 
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+}
+
+
