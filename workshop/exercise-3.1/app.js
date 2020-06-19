@@ -8,8 +8,15 @@ const seconds = document.querySelector("#seconds");
 const updateTime = () => {
     let currentTime = new Date();
     
-    hours.innerText = currentTime.getHours();
-    minutes.innerText = currentTime.getMinutes();
-    seconds.innerText = currentTime.getSeconds();
+    hours.innerText = beautifyTime(currentTime.getHours());
+    minutes.innerText = beautifyTime(currentTime.getMinutes());
+    seconds.innerText = beautifyTime(currentTime.getSeconds());
 }
+
+
+const beautifyTime = (time) => {
+    console.log(time.toString().length === 1 ? '0' + time : '' + time)
+    return time.toString().length === 1 ? '0' + time : '' + time;
+}
+
 setInterval(updateTime, 1000);
