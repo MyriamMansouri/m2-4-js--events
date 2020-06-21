@@ -40,6 +40,7 @@ const toggleTimer = () => {
 }
 
 const endOfTimer = () => {
+    isOn = false;
     timerInput.disabled = false ;
     clearInterval(timerInterval);
     btn.innerHTML = "Start";
